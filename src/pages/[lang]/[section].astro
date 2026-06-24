@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageContent from "../../components/PageContent.astro";
+import data from "../../data/site.json";
+import { labels, sectionKeys, type Lang, type Section } from "../../i18n";
+
+export function getStaticPaths() {
+  return (["zh", "en"] as const).flatMap((lang) =>
+    sectionKeys.map((section) => ({ params: { lang, section } }))
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const section = Astro.params.section as Section;
+const t = labels[lang];
+const profile = data.profile[lang];
+---
+<BaseLayout lang={lang} active={section} title={`${t.nav[section]}｜${profile.name}`} description={profile.bio}>
+  <PageContent lang={lang} section={section} />
+</BaseLayout>

@@ -1,0 +1,163 @@
+{
+  "profile": {
+    "zh": {
+      "name": "趙浩然",
+      "title": "教授",
+      "department": "環境工程與科學系",
+      "university": "國立屏東科技大學",
+      "tagline": "以環境科學回應真實世界的永續挑戰",
+      "bio": "本網站為提案草稿。教授簡介、學歷、經歷與研究專長將於資料確認後更新。",
+      "education": ["待教授提供並確認"],
+      "experience": ["待教授提供並確認"],
+      "email": "待教授確認",
+      "office": "待教授確認"
+    },
+    "en": {
+      "name": "Hao-Ran Chao",
+      "title": "Professor",
+      "department": "Department of Environmental Science and Engineering",
+      "university": "National Pingtung University of Science and Technology",
+      "tagline": "Environmental science for real-world sustainability challenges",
+      "bio": "This website is a draft proposal. Biography, education, experience, and research expertise will be updated after confirmation.",
+      "education": ["To be provided and confirmed"],
+      "experience": ["To be provided and confirmed"],
+      "email": "To be confirmed",
+      "office": "To be confirmed"
+    },
+    "links": {
+      "scholar": "",
+      "orcid": "",
+      "university": "https://wp.npust.edu.tw/",
+      "department": ""
+    }
+  },
+  "research": [
+    {
+      "id": "research-1",
+      "zh": {
+        "title": "研究方向一",
+        "summary": "待教授提供研究方向、研究問題與應用價值。",
+        "keywords": ["待確認", "環境工程"]
+      },
+      "en": {
+        "title": "Research Area One",
+        "summary": "Research scope, questions, and practical impact to be provided.",
+        "keywords": ["To be confirmed", "Environmental engineering"]
+      }
+    },
+    {
+      "id": "research-2",
+      "zh": {
+        "title": "研究方向二",
+        "summary": "此處可說明核心技術、分析方法與跨領域合作。",
+        "keywords": ["待確認", "環境科學"]
+      },
+      "en": {
+        "title": "Research Area Two",
+        "summary": "Core technologies, analytical methods, and collaborations can be introduced here.",
+        "keywords": ["To be confirmed", "Environmental science"]
+      }
+    },
+    {
+      "id": "research-3",
+      "zh": {
+        "title": "研究方向三",
+        "summary": "此處可呈現研究成果對產業、政策或社會的貢獻。",
+        "keywords": ["待確認", "永續發展"]
+      },
+      "en": {
+        "title": "Research Area Three",
+        "summary": "This section can describe contributions to industry, policy, or society.",
+        "keywords": ["To be confirmed", "Sustainability"]
+      }
+    }
+  ],
+  "publications": [
+    {
+      "year": "待確認",
+      "type": "journal",
+      "doi": "",
+      "zh": {
+        "title": "代表性期刊論文題名待補",
+        "authors": "作者名單待補",
+        "venue": "期刊名稱待補"
+      },
+      "en": {
+        "title": "Representative journal article title to be added",
+        "authors": "Author list to be added",
+        "venue": "Journal name to be added"
+      }
+    },
+    {
+      "year": "待確認",
+      "type": "conference",
+      "doi": "",
+      "zh": {
+        "title": "代表性研討會論文題名待補",
+        "authors": "作者名單待補",
+        "venue": "研討會名稱待補"
+      },
+      "en": {
+        "title": "Representative conference paper title to be added",
+        "authors": "Author list to be added",
+        "venue": "Conference name to be added"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "period": "待確認",
+      "zh": {
+        "title": "研究計畫名稱待補",
+        "funder": "補助機構待補",
+        "role": "執行角色待補"
+      },
+      "en": {
+        "title": "Research project title to be added",
+        "funder": "Funding body to be added",
+        "role": "Project role to be added"
+      }
+    }
+  ],
+  "members": [
+    {
+      "id": "professor",
+      "zh": {
+        "name": "趙浩然教授",
+        "role": "研究主持人",
+        "topic": "研究專長待確認"
+      },
+      "en": {
+        "name": "Prof. Hao-Ran Chao",
+        "role": "Principal Investigator",
+        "topic": "Research expertise to be confirmed"
+      }
+    },
+    {
+      "id": "member-placeholder",
+      "zh": {
+        "name": "團隊成員待補",
+        "role": "博士生／碩士生／研究助理",
+        "topic": "研究主題待補"
+      },
+      "en": {
+        "name": "Team member to be added",
+        "role": "Ph.D. / Master's Student / Research Assistant",
+        "topic": "Research topic to be added"
+      }
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-06-24",
+      "zh": {
+        "title": "學術網站提案版建立",
+        "summary": "網站目前為內容架構與視覺提案，所有學術資料均待教授確認。"
+      },
+      "en": {
+        "title": "Academic website proposal created",
+        "summary": "The website currently presents a structural and visual proposal. All academic information is pending confirmation."
+      }
+    }
+  ]
+}

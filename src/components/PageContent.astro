@@ -1,0 +1,112 @@
+---
+import data from "../data/site.json";
+import { labels, type Lang, type Section } from "../i18n";
+
+interface Props {
+  lang: Lang;
+  section: Section;
+}
+
+const { lang, section } = Astro.props;
+const t = labels[lang];
+const profile = data.profile[lang];
+const localized = (item: any) => item[lang];
+const sectionTitle = t.nav[section];
+---
+<section class="page-hero">
+  <div class="eyebrow">NPUST · Environmental Science & Engineering</div>
+  <h1>{sectionTitle}</h1>
+  <p>{section === "contact" ? t.contactLead : profile.tagline}</p>
+</section>
+
+<div class="page-shell">
+  {section === "about" && (
+    <div class="about-grid">
+      <aside class="portrait-card">
+        <div class="portrait-placeholder" role="img" aria-label={lang === "zh" ? "教授照片待補" : "Professor photo to be added"}>HC</div>
+        <h2>{profile.name}</h2><p>{profile.title}</p>
+      </aside>
+      <article class="prose-card">
+        <h2>{t.profile}</h2><p>{profile.bio}</p>
+        <div class="two-column">
+          <div><h3>{t.education}</h3><ul>{profile.education.map((item) => <li>{item}</li>)}</ul></div>
+          <div><h3>{t.experience}</h3><ul>{profile.experience.map((item) => <li>{item}</li>)}</ul></div>
+        </div>
+      </article>
+    </div>
+  )}
+
+  {section === "research" && (
+    <div class="card-grid">
+      {data.research.map((item, index) => {
+        const content = localized(item);
+        return <article class="research-card">
+          <span class="card-number">0{index + 1}</span>
+          <div class="research-icon" aria-hidden="true">{["◌", "⌁", "◇"][index]}</div>
+          <h2>{content.title}</h2><p>{content.summary}</p>
+          <div class="tags">{content.keywords.map((keyword: string) => <span>{keyword}</span>)}</div>
+        </article>
+      })}
+    </div>
+  )}
+
+  {section === "publications" && (
+    <div class="stack">
+      {data.publications.map((item) => {
+        const content = localized(item);
+        return <article class="publication">
+          <div class="publication-meta"><span>{item.year}</span><span>{item.type === "journal" ? t.journal : t.conference}</span></div>
+          <div><h2>{content.title}</h2><p>{content.authors}</p><p class="venue">{content.venue}</p></div>
+        </article>
+      })}
+    </div>
+  )}
+
+  {section === "projects" && (
+    <div class="timeline">
+      {data.projects.map((item) => {
+        const content = localized(item);
+        return <article><span class="period">{item.period}</span><div><h2>{content.title}</h2><p><b>{t.funder}：</b>{content.funder}</p><p><b>{t.role}：</b>{content.role}</p></div></article>
+      })}
+    </div>
+  )}
+
+  {section === "team" && (
+    <div class="card-grid members">
+      {data.members.map((item, index) => {
+        const content = localized(item);
+        return <article class="member-card">
+          <div class="avatar" aria-hidden="true">{index === 0 ? "HC" : "＋"}</div>
+          <h2>{content.name}</h2><p class="member-role">{content.role}</p><p>{content.topic}</p>
+        </article>
+      })}
+    </div>
+  )}
+
+  {section === "news" && (
+    <div class="stack">
+      {data.news.map((item) => {
+        const content = localized(item);
+        return <article class="news-item"><time datetime={item.date}>{item.date}</time><div><h2>{content.title}</h2><p>{content.summary}</p></div></article>
+      })}
+    </div>
+  )}
+
+  {section === "contact" && (
+    <div class="contact-grid">
+      <article class="contact-card">
+        <span class="eyebrow">{profile.university}</span>
+        <h2>{profile.name} · {profile.title}</h2>
+        <p>{profile.department}</p>
+        <dl><div><dt>{t.email}</dt><dd>{profile.email}</dd></div><div><dt>{t.office}</dt><dd>{profile.office}</dd></div></dl>
+      </article>
+      <article class="link-card">
+        <h2>{t.external}</h2>
+        <a href={data.profile.links.university} target="_blank" rel="noreferrer">{profile.university}<span>↗</span></a>
+        <span class="disabled-link">Google Scholar · {t.pending}</span>
+        <span class="disabled-link">ORCID · {t.pending}</span>
+        <span class="disabled-link">{profile.department} · {t.pending}</span>
+      </article>
+    </div>
+  )}
+</div>

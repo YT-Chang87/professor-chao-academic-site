@@ -1,0 +1,72 @@
+---
+import { labels, type Lang } from "../i18n";
+import "../styles/global.css";
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  active?: string;
+}
+
+const { lang, title, description, active = "home" } = Astro.props;
+const t = labels[lang];
+const base = import.meta.env.BASE_URL;
+const homePath = `${base}${lang}/`;
+const otherLang = lang === "zh" ? "en" : "zh";
+const currentSection = active === "home" ? "" : `${active}/`;
+const navItems = Object.entries(t.nav);
+---
+<!doctype html>
+<html lang={t.locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#163d32" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    <div class="draft-bar">
+      <strong>{t.draft}</strong><span>{t.draftDetail}</span>
+    </div>
+    <header class="site-header">
+      <a class="brand" href={homePath} aria-label={t.nav.home}>
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span><b>{lang === "zh" ? "趙浩然教授" : "Prof. Hao-Ran Chao"}</b><small>NPUST · ESE</small></span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+      <nav id="site-nav" aria-label="Primary navigation">
+        {navItems.map(([key, value]) => (
+          <a class:list={{ active: active === key }} href={key === "home" ? homePath : `${homePath}${key}/`}>{value}</a>
+        ))}
+      </nav>
+      <a class="language-switch" href={`${base}${otherLang}/${currentSection}`} hreflang={otherLang}>{t.langName}</a>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <div>
+        <b>{lang === "zh" ? "趙浩然教授學術網站" : "Prof. Hao-Ran Chao Academic Website"}</b>
+        <p>{t.footerNote}</p>
+      </div>
+      <p>© 2026 · {lang === "zh" ? "網站提案版" : "Website proposal"}</p>
+    </footer>
+    <script>
+      const button = document.querySelector(".menu-button");
+      const nav = document.querySelector("#site-nav");
+      button?.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        nav?.classList.toggle("open", !open);
+      });
+    </script>
+  </body>
+</html>
