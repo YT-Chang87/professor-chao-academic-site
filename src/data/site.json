@@ -2,121 +2,312 @@
   "profile": {
     "zh": {
       "name": "趙浩然",
-      "title": "教授",
+      "englishName": "How-Ran Chao",
+      "title": "特聘教授兼系主任",
       "department": "環境工程與科學系",
       "university": "國立屏東科技大學",
-      "tagline": "以環境科學回應真實世界的永續挑戰",
-      "bio": "本網站為提案草稿。教授簡介、學歷、經歷與研究專長將於資料確認後更新。",
-      "education": ["待教授提供並確認"],
-      "experience": ["待教授提供並確認"],
+      "lab": "環境與健康風險評估實驗室（EP108）",
+      "tagline": "從環境暴露到健康風險，建立跨域科學證據",
+      "bio": "趙浩然教授的研究橫跨空氣污染物、奈米材料毒性、環境暴露與健康風險評估、持久性有機污染物、微生物指標與環境監測。近年聚焦 PM2.5 毒性、阻燃劑暴露、兒童與新生兒健康指標，以及氣候變遷與溫室氣體減量，研究成果可為環境毒理、公共衛生及永續環境管理提供科學證據。",
+      "education": [
+        "國立成功大學環境工程博士",
+        "國立成功大學環境工程碩士",
+        "國立成功大學生物學系學士"
+      ],
+      "experience": [
+        "國立屏東科技大學環境工程與科學系特聘教授兼系主任",
+        "國立屏東科技大學環境工程與科學系教授",
+        "中華醫事科技大學環境與安全衛生工程系助理教授",
+        "國家衛生研究院環境衛生與職業醫學研究組博士後研究員"
+      ],
+      "expertise": [
+        "環境衛生",
+        "環境健康暴露評估",
+        "生物偵測",
+        "環境毒理",
+        "空氣毒物",
+        "環境分析",
+        "環境教育",
+        "公共衛生"
+      ],
       "email": "待教授確認",
-      "office": "待教授確認"
+      "office": "環境與健康風險評估實驗室（EP108）"
     },
     "en": {
-      "name": "Hao-Ran Chao",
-      "title": "Professor",
+      "name": "How-Ran Chao",
+      "englishName": "How-Ran Chao",
+      "title": "Distinguished Professor and Department Chair",
       "department": "Department of Environmental Science and Engineering",
       "university": "National Pingtung University of Science and Technology",
-      "tagline": "Environmental science for real-world sustainability challenges",
-      "bio": "This website is a draft proposal. Biography, education, experience, and research expertise will be updated after confirmation.",
-      "education": ["To be provided and confirmed"],
-      "experience": ["To be provided and confirmed"],
+      "lab": "Environmental and Health Risk Assessment Laboratory (EP108)",
+      "tagline": "Connecting environmental exposure with human health risk",
+      "bio": "Prof. How-Ran Chao conducts interdisciplinary research on air pollutants, nanomaterial toxicity, environmental exposure and health risk assessment, persistent organic pollutants, microbial indicators, and environmental monitoring. His recent work addresses PM2.5 toxicity, flame-retardant exposure, child and neonatal health indicators, climate change, and greenhouse-gas reduction.",
+      "education": [
+        "Ph.D. in Environmental Engineering, National Cheng Kung University",
+        "M.S. in Environmental Engineering, National Cheng Kung University",
+        "B.S. in Biology, National Cheng Kung University"
+      ],
+      "experience": [
+        "Distinguished Professor and Department Chair, Department of Environmental Science and Engineering, NPUST",
+        "Professor, Department of Environmental Science and Engineering, NPUST",
+        "Assistant Professor, Department of Environmental and Occupational Safety and Hygiene, Chung Hwa University of Medical Technology",
+        "Postdoctoral Researcher, National Health Research Institutes"
+      ],
+      "expertise": [
+        "Environmental health",
+        "Environmental health exposure assessment",
+        "Biomonitoring",
+        "Environmental toxicology",
+        "Air toxics",
+        "Environmental analysis",
+        "Environmental education",
+        "Public health"
+      ],
       "email": "To be confirmed",
-      "office": "To be confirmed"
+      "office": "Environmental and Health Risk Assessment Laboratory (EP108)"
     },
+    "photo": "/images/how-ran-chao.jpg",
+    "labLogo": "/images/ehra-lab-logo.png",
     "links": {
       "scholar": "",
-      "orcid": "",
+      "orcid": "https://orcid.org/0000-0001-6492-6417",
+      "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56486881300",
       "university": "https://wp.npust.edu.tw/",
       "department": ""
     }
   },
   "research": [
     {
-      "id": "research-1",
+      "id": "emerging-pollutants",
       "zh": {
-        "title": "研究方向一",
-        "summary": "待教授提供研究方向、研究問題與應用價值。",
-        "keywords": ["待確認", "環境工程"]
+        "title": "新興環境污染物分析與生物檢測",
+        "summary": "分析有機磷阻燃劑、持久性有機污染物與其他新興污染物，結合生物檢測方法評估毒性效應。",
+        "keywords": ["阻燃劑", "生物檢測", "環境分析"]
       },
       "en": {
-        "title": "Research Area One",
-        "summary": "Research scope, questions, and practical impact to be provided.",
-        "keywords": ["To be confirmed", "Environmental engineering"]
+        "title": "Emerging Pollutants and Biomonitoring",
+        "summary": "Analysis of organophosphate flame retardants, persistent organic pollutants, and emerging contaminants using biological assays for toxicity evaluation.",
+        "keywords": ["Flame retardants", "Bioassays", "Environmental analysis"]
       }
     },
     {
-      "id": "research-2",
+      "id": "environmental-epidemiology",
       "zh": {
-        "title": "研究方向二",
-        "summary": "此處可說明核心技術、分析方法與跨領域合作。",
-        "keywords": ["待確認", "環境科學"]
+        "title": "環境與健康流行病學",
+        "summary": "探討環境暴露、內分泌干擾物與兒童及嬰幼兒健康、神經發展等健康指標之關聯。",
+        "keywords": ["暴露評估", "兒童健康", "公共衛生"]
       },
       "en": {
-        "title": "Research Area Two",
-        "summary": "Core technologies, analytical methods, and collaborations can be introduced here.",
-        "keywords": ["To be confirmed", "Environmental science"]
+        "title": "Environmental and Health Epidemiology",
+        "summary": "Investigation of environmental exposure, endocrine-disrupting chemicals, child health, and neurodevelopmental indicators.",
+        "keywords": ["Exposure assessment", "Child health", "Public health"]
       }
     },
     {
-      "id": "research-3",
+      "id": "air-pollution",
       "zh": {
-        "title": "研究方向三",
-        "summary": "此處可呈現研究成果對產業、政策或社會的貢獻。",
-        "keywords": ["待確認", "永續發展"]
+        "title": "空氣污染物採集與分析",
+        "summary": "進行 PM2.5、生物氣膠與空氣毒物採樣分析，並評估其衍生的細胞與生物毒性效應。",
+        "keywords": ["PM2.5", "生物氣膠", "空氣毒物"]
       },
       "en": {
-        "title": "Research Area Three",
-        "summary": "This section can describe contributions to industry, policy, or society.",
-        "keywords": ["To be confirmed", "Sustainability"]
+        "title": "Air Pollutant Sampling and Analysis",
+        "summary": "Sampling and analysis of PM2.5, bioaerosols, and air toxics, together with cellular and biological toxicity assessment.",
+        "keywords": ["PM2.5", "Bioaerosols", "Air toxics"]
+      }
+    },
+    {
+      "id": "climate",
+      "zh": {
+        "title": "氣候變遷與溫室氣體減量",
+        "summary": "投入碳盤查、溫室氣體減量、廢棄物系統及資源循環等永續環境管理議題。",
+        "keywords": ["碳盤查", "溫室氣體", "資源循環"]
+      },
+      "en": {
+        "title": "Climate Change and GHG Reduction",
+        "summary": "Research and services in carbon inventories, greenhouse-gas mitigation, waste systems, and circular resource management.",
+        "keywords": ["Carbon inventory", "GHG reduction", "Circular economy"]
       }
     }
   ],
   "publications": [
     {
-      "year": "待確認",
+      "year": "2023",
       "type": "journal",
-      "doi": "",
+      "doi": "https://doi.org/10.3390/toxics11120989",
       "zh": {
-        "title": "代表性期刊論文題名待補",
-        "authors": "作者名單待補",
-        "venue": "期刊名稱待補"
+        "title": "Titanium Dioxide (TiO2) Nanoparticle Toxicity in a Caenorhabditis elegans Model",
+        "authors": "Huang ST, Lu JH, Jualo SM, Tayo LL, Mansor WN, Lai YC, Wang CL, Chao HR",
+        "venue": "Toxics, 11(12), 989"
       },
       "en": {
-        "title": "Representative journal article title to be added",
-        "authors": "Author list to be added",
-        "venue": "Journal name to be added"
+        "title": "Titanium Dioxide (TiO2) Nanoparticle Toxicity in a Caenorhabditis elegans Model",
+        "authors": "Huang ST, Lu JH, Jualo SM, Tayo LL, Mansor WN, Lai YC, Wang CL, Chao HR",
+        "venue": "Toxics, 11(12), 989"
       }
     },
     {
-      "year": "待確認",
-      "type": "conference",
-      "doi": "",
+      "year": "2023",
+      "type": "journal",
+      "doi": "https://doi.org/10.3390/toxics11120968",
       "zh": {
-        "title": "代表性研討會論文題名待補",
-        "authors": "作者名單待補",
-        "venue": "研討會名稱待補"
+        "title": "Persistent Halogenated Organic Pollutants in Deep-Water-Deposited Particulates from South China Sea",
+        "authors": "Lee JD, Chiou TH, Zhang HJ, Chao HR, Chen KY, Gou YY, Huang CE, Lin SL, Wang LC",
+        "venue": "Toxics, 11(12), 968"
       },
       "en": {
-        "title": "Representative conference paper title to be added",
-        "authors": "Author list to be added",
-        "venue": "Conference name to be added"
+        "title": "Persistent Halogenated Organic Pollutants in Deep-Water-Deposited Particulates from South China Sea",
+        "authors": "Lee JD, Chiou TH, Zhang HJ, Chao HR, Chen KY, Gou YY, Huang CE, Lin SL, Wang LC",
+        "venue": "Toxics, 11(12), 968"
+      }
+    },
+    {
+      "year": "2023",
+      "type": "journal",
+      "doi": "https://doi.org/10.3389/fendo.2023.1173449",
+      "zh": {
+        "title": "Urinary levels of organophosphate flame retardants metabolites in a young population from Southern Taiwan and potential health effects",
+        "authors": "Chen FS, Chen CC, Tsai CC, Lu JH, You HL, Chen CM, et al., Chao HR, Wang LJ",
+        "venue": "Frontiers in Endocrinology, 14, 1173449"
+      },
+      "en": {
+        "title": "Urinary levels of organophosphate flame retardants metabolites in a young population from Southern Taiwan and potential health effects",
+        "authors": "Chen FS, Chen CC, Tsai CC, Lu JH, You HL, Chen CM, et al., Chao HR, Wang LJ",
+        "venue": "Frontiers in Endocrinology, 14, 1173449"
+      }
+    },
+    {
+      "year": "2023",
+      "type": "journal",
+      "doi": "https://doi.org/10.1007/s00787-021-01886-4",
+      "zh": {
+        "title": "Interrelationships among growth hormone, thyroid function, and endocrine-disrupting chemicals on the susceptibility to attention-deficit/hyperactivity disorder",
+        "authors": "Wang LJ, Huang YH, Chou WJ, Lee SY, Chang HY, Chen CC, Chao HR",
+        "venue": "European Child & Adolescent Psychiatry, 32(8), 1391–1401"
+      },
+      "en": {
+        "title": "Interrelationships among growth hormone, thyroid function, and endocrine-disrupting chemicals on the susceptibility to attention-deficit/hyperactivity disorder",
+        "authors": "Wang LJ, Huang YH, Chou WJ, Lee SY, Chang HY, Chen CC, Chao HR",
+        "venue": "European Child & Adolescent Psychiatry, 32(8), 1391–1401"
       }
     }
   ],
   "projects": [
     {
-      "period": "待確認",
+      "period": "國科會",
       "zh": {
-        "title": "研究計畫名稱待補",
-        "funder": "補助機構待補",
-        "role": "執行角色待補"
+        "title": "新興污染物有機磷阻燃劑於室內環境對嬰幼兒健康之影響",
+        "funder": "國家科學及技術委員會",
+        "role": "計畫編號：112-2221-E-020-004-"
       },
       "en": {
-        "title": "Research project title to be added",
-        "funder": "Funding body to be added",
-        "role": "Project role to be added"
+        "title": "Effects of emerging organophosphate flame retardants in indoor environments on infant health",
+        "funder": "National Science and Technology Council",
+        "role": "Project No. 112-2221-E-020-004-"
       }
+    },
+    {
+      "period": "國科會",
+      "zh": {
+        "title": "有機磷阻燃劑在居家室內環境流佈、宿命以及其對嬰幼兒健康與發展的影響",
+        "funder": "國家科學及技術委員會",
+        "role": "計畫編號：113-2221-E-020-005-MY3"
+      },
+      "en": {
+        "title": "Distribution and fate of organophosphate flame retardants in homes and their effects on infant health and development",
+        "funder": "National Science and Technology Council",
+        "role": "Project No. 113-2221-E-020-005-MY3"
+      }
+    },
+    {
+      "period": "國科會",
+      "zh": {
+        "title": "氣炸鍋產生室內 PM2.5 內含短鏈氯化石蠟、脂肪酸、脂質、多環芳香烴化合物特徵與其衍生的毒性效應",
+        "funder": "國家科學及技術委員會",
+        "role": "計畫編號：113-2221-E-020-006-MY3"
+      },
+      "en": {
+        "title": "Characteristics and toxicity of short-chain chlorinated paraffins, fatty acids, lipids, and PAHs in indoor PM2.5 generated by air fryers",
+        "funder": "National Science and Technology Council",
+        "role": "Project No. 113-2221-E-020-006-MY3"
+      }
+    },
+    {
+      "period": "合作研究",
+      "zh": {
+        "title": "細懸浮微粒與高葡萄糖共暴露後對人體肺腺癌細胞的毒性影響",
+        "funder": "屏東榮民總醫院龍泉分院",
+        "role": "合作研究計畫"
+      },
+      "en": {
+        "title": "Toxic effects of co-exposure to fine particulate matter and high glucose on human lung adenocarcinoma cells",
+        "funder": "Pingtung Veterans General Hospital, Longquan Branch",
+        "role": "Collaborative research"
+      }
+    },
+    {
+      "period": "合作研究",
+      "zh": {
+        "title": "非連鎖藥局室內灰塵中常用阻燃劑濃度及其衍生的健康風險",
+        "funder": "屏東榮民總醫院龍泉分院",
+        "role": "合作研究計畫"
+      },
+      "en": {
+        "title": "Common flame retardants in indoor dust from independent pharmacies and associated health risks",
+        "funder": "Pingtung Veterans General Hospital, Longquan Branch",
+        "role": "Collaborative research"
+      }
+    },
+    {
+      "period": "產學合作",
+      "zh": {
+        "title": "以 UV-AOPs 方式處理廢水中 PFAS 可行性評估",
+        "funder": "裕山環境工程股份有限公司",
+        "role": "產學合作計畫"
+      },
+      "en": {
+        "title": "Feasibility assessment of PFAS treatment in wastewater using UV-based advanced oxidation processes",
+        "funder": "Yu Shan Environmental Engineering Co., Ltd.",
+        "role": "Industry–academia collaboration"
+      }
+    },
+    {
+      "period": "產學合作",
+      "zh": {
+        "title": "大帶小計畫碳盤查服務協助案",
+        "funder": "長寅科技股份有限公司",
+        "role": "產學合作計畫"
+      },
+      "en": {
+        "title": "Carbon inventory support service for a supply-chain capacity-building program",
+        "funder": "Chang Yin Technology Co., Ltd.",
+        "role": "Industry–academia collaboration"
+      }
+    }
+  ],
+  "equipment": [
+    {
+      "zh": "LC-MS/MS 液相層析串聯質譜儀",
+      "en": "LC-MS/MS system"
+    },
+    {
+      "zh": "SIBATA HV-1000R 高流量空氣採樣器",
+      "en": "SIBATA HV-1000R high-volume air sampler"
+    },
+    {
+      "zh": "生物氣膠檢測儀",
+      "en": "Bioaerosol detector"
+    },
+    {
+      "zh": "秀麗隱桿線蟲與小鼠生物模式",
+      "en": "Caenorhabditis elegans and mouse models"
+    }
+  ],
+  "patents": [
+    {
+      "period": "2023–2042",
+      "zh": "9,12-octadecadiynoic acid 促嬰幼兒神經發展之效用",
+      "en": "Use of 9,12-octadecadiynoic acid for promoting infant neurodevelopment"
     }
   ],
   "members": [
@@ -124,26 +315,26 @@
       "id": "professor",
       "zh": {
         "name": "趙浩然教授",
-        "role": "研究主持人",
-        "topic": "研究專長待確認"
+        "role": "實驗室主持人",
+        "topic": "環境暴露、健康風險評估與環境毒理"
       },
       "en": {
-        "name": "Prof. Hao-Ran Chao",
+        "name": "Prof. How-Ran Chao",
         "role": "Principal Investigator",
-        "topic": "Research expertise to be confirmed"
+        "topic": "Environmental exposure, health risk assessment, and environmental toxicology"
       }
     },
     {
       "id": "member-placeholder",
       "zh": {
-        "name": "團隊成員待補",
+        "name": "研究團隊",
         "role": "博士生／碩士生／研究助理",
-        "topic": "研究主題待補"
+        "topic": "成員資料待實驗室確認"
       },
       "en": {
-        "name": "Team member to be added",
-        "role": "Ph.D. / Master's Student / Research Assistant",
-        "topic": "Research topic to be added"
+        "name": "Research Team",
+        "role": "Ph.D. / Master's Students / Research Assistants",
+        "topic": "Member profiles pending laboratory confirmation"
       }
     }
   ],
@@ -151,12 +342,12 @@
     {
       "date": "2026-06-24",
       "zh": {
-        "title": "學術網站提案版建立",
-        "summary": "網站目前為內容架構與視覺提案，所有學術資料均待教授確認。"
+        "title": "網站內容依實驗室介紹海報更新",
+        "summary": "已補充教授學經歷、研究專長、研究方向、計畫、代表著作、專利與實驗室設備。"
       },
       "en": {
-        "title": "Academic website proposal created",
-        "summary": "The website currently presents a structural and visual proposal. All academic information is pending confirmation."
+        "title": "Website updated from laboratory introduction posters",
+        "summary": "Education, experience, expertise, research areas, projects, publications, patent, and laboratory equipment have been added."
       }
     }
   ]

@@ -23,7 +23,7 @@ const sectionTitle = t.nav[section];
   {section === "about" && (
     <div class="about-grid">
       <aside class="portrait-card">
-        <div class="portrait-placeholder" role="img" aria-label={lang === "zh" ? "教授照片待補" : "Professor photo to be added"}>HC</div>
+        <img class="portrait-photo" src={`${import.meta.env.BASE_URL}images/how-ran-chao.jpg`} alt={lang === "zh" ? "趙浩然教授" : "Prof. How-Ran Chao"} />
         <h2>{profile.name}</h2><p>{profile.title}</p>
       </aside>
       <article class="prose-card">
@@ -32,6 +32,7 @@ const sectionTitle = t.nav[section];
           <div><h3>{t.education}</h3><ul>{profile.education.map((item) => <li>{item}</li>)}</ul></div>
           <div><h3>{t.experience}</h3><ul>{profile.experience.map((item) => <li>{item}</li>)}</ul></div>
         </div>
+        <div class="expertise-block"><h3>{t.expertise}</h3><div class="tags">{profile.expertise.map((item) => <span>{item}</span>)}</div></div>
       </article>
     </div>
   )}
@@ -48,6 +49,10 @@ const sectionTitle = t.nav[section];
         </article>
       })}
     </div>
+    <section class="equipment-section">
+      <h2>{t.equipment}</h2>
+      <div class="equipment-grid">{data.equipment.map((item) => <div><span aria-hidden="true">⌬</span><p>{item[lang]}</p></div>)}</div>
+    </section>
   )}
 
   {section === "publications" && (
@@ -56,9 +61,10 @@ const sectionTitle = t.nav[section];
         const content = localized(item);
         return <article class="publication">
           <div class="publication-meta"><span>{item.year}</span><span>{item.type === "journal" ? t.journal : t.conference}</span></div>
-          <div><h2>{content.title}</h2><p>{content.authors}</p><p class="venue">{content.venue}</p></div>
+          <div><h2>{content.title}</h2><p>{content.authors}</p><p class="venue">{content.venue}</p>{item.doi && <a class="doi-link" href={item.doi} target="_blank" rel="noreferrer">{t.doi} ↗</a>}</div>
         </article>
       })}
+      <article class="patent-card"><span class="period">{data.patents[0].period}</span><div><h2>{t.patent}</h2><p>{data.patents[0][lang]}</p></div></article>
     </div>
   )}
 
@@ -104,7 +110,8 @@ const sectionTitle = t.nav[section];
         <h2>{t.external}</h2>
         <a href={data.profile.links.university} target="_blank" rel="noreferrer">{profile.university}<span>↗</span></a>
         <span class="disabled-link">Google Scholar · {t.pending}</span>
-        <span class="disabled-link">ORCID · {t.pending}</span>
+        <a href={data.profile.links.orcid} target="_blank" rel="noreferrer">ORCID 0000-0001-6492-6417<span>↗</span></a>
+        <a href={data.profile.links.scopus} target="_blank" rel="noreferrer">Scopus Author Profile<span>↗</span></a>
         <span class="disabled-link">{profile.department} · {t.pending}</span>
       </article>
     </div>

@@ -4,8 +4,8 @@ export const labels = {
   zh: {
     locale: "zh-Hant",
     langName: "English",
-    draft: "網站提案草稿",
-    draftDetail: "內容尚待趙浩然教授確認",
+    draft: "實驗室資料更新版",
+    draftDetail: "內容依 EP108 介紹海報整理",
     nav: {
       home: "首頁",
       about: "關於教授",
@@ -23,6 +23,10 @@ export const labels = {
     viewAll: "查看完整內容",
     education: "學歷",
     experience: "經歷",
+    expertise: "學術專長",
+    equipment: "實驗室設備與研究模式",
+    patent: "專利",
+    doi: "查看 DOI",
     keywords: "關鍵字",
     journal: "期刊論文",
     conference: "研討會論文",
@@ -35,13 +39,13 @@ export const labels = {
     pending: "待確認",
     backHome: "返回首頁",
     skip: "跳至主要內容",
-    footerNote: "網站內容尚待確認，請勿視為教授正式公開資料。"
+    footerNote: "資料來源：環境與健康風險評估實驗室介紹海報；聯絡資訊與成員名單仍待確認。"
   },
   en: {
     locale: "en",
     langName: "繁體中文",
-    draft: "Website Proposal Draft",
-    draftDetail: "Content pending confirmation by Prof. Hao-Ran Chao",
+    draft: "Laboratory Profile Edition",
+    draftDetail: "Content compiled from EP108 introduction posters",
     nav: {
       home: "Home",
       about: "About",
@@ -59,6 +63,10 @@ export const labels = {
     viewAll: "View full section",
     education: "Education",
     experience: "Experience",
+    expertise: "Expertise",
+    equipment: "Laboratory Equipment and Models",
+    patent: "Patent",
+    doi: "View DOI",
     keywords: "Keywords",
     journal: "Journal Article",
     conference: "Conference Paper",
@@ -71,7 +79,7 @@ export const labels = {
     pending: "To be confirmed",
     backHome: "Back to home",
     skip: "Skip to main content",
-    footerNote: "Content is pending confirmation and should not be treated as official information."
+    footerNote: "Source: Environmental and Health Risk Assessment Laboratory introduction posters. Contact and member details remain pending confirmation."
   }
 } as const;
 
